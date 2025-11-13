@@ -5,8 +5,35 @@ This guide will help you quickly set up the Musora Claude Code Plugin Marketplac
 ## Prerequisites
 
 - Claude Code CLI installed and configured
-- Node.js and npm installed (for MCP servers)
+- Node.js and npm installed via nvm (for MCP servers)
+  - **Important**: MCP servers require npm/npx to be available
+  - If you don't have nvm installed, see the installation instructions below
 - Access to GitHub, Jira, and Laravel projects
+
+### Installing Node.js via nvm (if not already installed)
+
+If you don't have Node.js and npm installed, use nvm (Node Version Manager):
+
+```bash
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+# Load nvm into current shell
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Install latest LTS Node.js (includes npm and npx)
+nvm install --lts
+
+# Set as default
+nvm use --lts && nvm alias default node
+
+# Verify installation
+node --version && npm --version && npx --version
+```
+
+After installing, **restart your terminal or Claude Code** for the changes to take effect.
 
 ## Step 1: Clone or Access the Marketplace
 

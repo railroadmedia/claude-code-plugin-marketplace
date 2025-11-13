@@ -10,23 +10,15 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${BE_GITHUB_TOKEN}"
       }
     },
-    "jira": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-jira"
-      ],
-      "env": {
-        "JIRA_URL": "${BE_JIRA_URL}",
-        "JIRA_EMAIL": "${BE_JIRA_EMAIL}",
-        "JIRA_API_TOKEN": "${BE_JIRA_API_TOKEN}"
-      }
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "type": "http"
     },
     "context7": {
       "command": "npx",
       "args": [
         "-y",
-        "@context7/mcp-server-laravel"
+        "@upstash/context7-mcp"
       ],
       "env": {
         "LARAVEL_PROJECT_PATH": "${BE_LARAVEL_PROJECT_PATH}"
