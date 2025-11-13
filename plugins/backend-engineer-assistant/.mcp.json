@@ -11,8 +11,24 @@
       }
     },
     "atlassian": {
-      "url": "https://mcp.atlassian.com/v1/sse",
-      "type": "http"
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "JIRA_URL",
+        "-e",
+        "JIRA_USERNAME",
+        "-e",
+        "JIRA_API_TOKEN",
+        "ghcr.io/sooperset/mcp-atlassian:latest"
+      ],
+      "env": {
+        "JIRA_URL": "${BE_JIRA_URL}",
+        "JIRA_USERNAME": "${BE_JIRA_EMAIL}",
+        "JIRA_API_TOKEN": "${BE_JIRA_API_TOKEN}"
+      }
     },
     "context7": {
       "command": "npx",
