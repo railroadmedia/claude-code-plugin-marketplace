@@ -6,6 +6,5 @@
     "name": "Musora Engineering"
   },
   "homepage": "https://github.com/railroadmedia/claude-code-plugin-marketplace",
-  "keywords": ["backend", "laravel", "github", "jira", "mcp", "context7"],
-  "category": "development"
+  "keywords": ["backend", "laravel", "github", "jira", "mcp", "context7"]
 }
