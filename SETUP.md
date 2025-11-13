@@ -53,7 +53,7 @@ source ~/.bashrc  # or source ~/.zshrc
 
 Or if on GitHub:
 ```bash
-/plugin marketplace add musora/claude-code-plugin-marketplace
+/plugin marketplace add railroadmedia/claude-code-plugin-marketplace
 ```
 
 ## Step 4: Install the Backend Engineer Assistant Plugin
@@ -122,7 +122,7 @@ To automatically install this marketplace for your entire team:
 {
   "extraKnownMarketplaces": [
     {
-      "source": "musora/claude-code-plugin-marketplace"
+      "source": "railroadmedia/claude-code-plugin-marketplace"
     }
   ],
   "plugins": [

@@ -19,7 +19,7 @@ Add this marketplace to your Claude Code installation:
 Or if hosted on GitHub:
 
 ```bash
-/plugin marketplace add musora/claude-code-plugin-marketplace
+/plugin marketplace add railroadmedia/claude-code-plugin-marketplace
 ```
 
 ### Installing Plugins
@@ -107,7 +107,7 @@ To automatically install this marketplace for your team, add to your project's `
 {
   "extraKnownMarketplaces": [
     {
-      "source": "/path/to/claude-code-plugin-marketplace"
+      "source": "railroadmedia/claude-code-plugin-marketplace"
     }
   ],
   "plugins": [
@@ -153,4 +153,4 @@ plugins/your-plugin/
 
 ## Support
 
-For issues or questions, contact the Musora Engineering team or create an issue in this repository. 
+For issues or questions, contact the Musora Engineering team or create an issue at https://github.com/railroadmedia/claude-code-plugin-marketplace/issues 

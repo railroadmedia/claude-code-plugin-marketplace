@@ -1,6 +1,8 @@
 {
   "name": "musora-engineering",
-  "owner": "Musora Engineering",
+  "owner": {
+    "name": "Musora Engineering"
+  },
   "description": "Internal marketplace for Musora's Claude Code plugins and MCP servers",
   "version": "1.0.0",
   "pluginRoot": "./plugins",
@@ -10,7 +12,9 @@
       "source": "./plugins/backend-engineer-assistant",
       "description": "Backend engineering assistant with GitHub, Jira, and Context7 (Laravel) MCP integrations",
       "version": "1.0.0",
-      "author": "Musora Engineering",
+      "author": {
+        "name": "Musora Engineering"
+      },
       "category": "development",
       "keywords": ["backend", "laravel", "github", "jira", "mcp"]
     }
