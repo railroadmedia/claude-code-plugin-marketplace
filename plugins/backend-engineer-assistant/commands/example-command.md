@@ -1,0 +1,1 @@
+Help me do something useful (this is the command prompt for claude).

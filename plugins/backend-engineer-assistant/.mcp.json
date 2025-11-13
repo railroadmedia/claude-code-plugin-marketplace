@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${BE_GITHUB_TOKEN}"
+      }
+    },
+    "jira": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-jira"
+      ],
+      "env": {
+        "JIRA_URL": "${BE_JIRA_URL}",
+        "JIRA_EMAIL": "${BE_JIRA_EMAIL}",
+        "JIRA_API_TOKEN": "${BE_JIRA_API_TOKEN}"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@context7/mcp-server-laravel"
+      ],
+      "env": {
+        "LARAVEL_PROJECT_PATH": "${BE_LARAVEL_PROJECT_PATH}"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "backend-engineer-assistant",
+  "description": "Backend engineering assistant with GitHub, Jira, and Context7 (Laravel) MCP integrations for enhanced development workflow",
+  "version": "1.0.0",
+  "author": "Musora Engineering",
+  "homepage": "https://github.com/musora/claude-code-plugin-marketplace",
+  "keywords": ["backend", "laravel", "github", "jira", "mcp", "context7"],
+  "category": "development"
+}
